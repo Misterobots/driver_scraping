@@ -50,8 +50,6 @@ async function getDrivers(page, product) {
     }
 
 	await page.click('#btnCollapseDriverList', { clickCount: 1 });
-	log("Taking a screenshot...");
-	await page.screenshot({ path: screenshot2, fullPage: true });
     const downloadsTableSelector = "#downloads-table";
     await page.waitForSelector(`${downloadsTableSelector} tr:nth-child(4)`, {timeout: 32000});
     await page.waitForSelector(`${downloadsTableSelector} #paginationRow`);
@@ -162,8 +160,8 @@ async function main(options) {
 }
 
 program
-    .option('--screenshot-path <path>', 'screenshot output path', 'screenshot2.png')
-	.option('--screenshot-path1 <path>', 'screenshot output path', 'screenshot1.png')
+    .option('--screenshot-path <path>', 'screenshot output path', 'driver_info.png')
+	.option('--screenshot-path1 <path>', 'screenshot output path', 'driver_page.png')
     .option('--viewport-size <size>', 'browser viewport size', '1280x720')
     .option('--debug', 'run the browser in foreground', false)
     .parse(process.argv);
