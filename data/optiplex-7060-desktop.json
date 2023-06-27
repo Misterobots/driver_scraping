@@ -1,0 +1,26 @@
+[
+    {
+        "name": "NVIDIA GeForce GT 10xx/GTX 1xx0/RTX x0x0 Graphics Driver",
+        "category": "Video",
+        "importance": "critical",
+        "date": "2023-06-13T00:00:00.000Z",
+        "url": "https://dl.dell.com/FOLDER09788542M/1/NVIDIA-GeForce-GT-10xx-GTX-1xx0-RTX-x0x0-Graphics_WR7HF_WIN64_31.0.15.3141_A00.EXE",
+        "detailsUrl": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=wr7hf&oscode=wt64a&productcode=optiplex-7060-desktop"
+    },
+    {
+        "name": "Trusted Device Agent",
+        "category": "Trusted Device Security",
+        "importance": "recommended",
+        "date": "2023-06-05T00:00:00.000Z",
+        "url": "https://dl.dell.com/FOLDER10120459M/1/Trusted-Device-5.5.168.zip",
+        "detailsUrl": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=39kvf&oscode=wt64a&productcode=optiplex-7060-desktop"
+    },
+    {
+        "name": "Dell/Alienware Digital Delivery Application",
+        "category": "Application",
+        "importance": "optional",
+        "date": "2023-06-16T00:00:00.000Z",
+        "url": "https://dl.dell.com/FOLDER10048928M/2/Dell-Alienware-Digital-Delivery-Application_RJT28_WIN_5.0.71.0_A24_01.EXE",
+        "detailsUrl": "https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=rjt28&oscode=wt64a&productcode=optiplex-7060-desktop"
+    }
+]

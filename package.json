@@ -1,0 +1,21 @@
+{
+    "name": "dell-drivers-scraper",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "get the dell drivers list",
+    "main": "main.js",
+	"scripts": {
+		"start": "NODE_ENV=dev DEBUG=puppeteer:* node main.js"
+	},
+    "author": "Justin Shively",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "commander": "^10.0.0",
+        "prompt-sync": "^4.2.0",
+        "puppeteer": "^19.8.2"
+    }
+}
