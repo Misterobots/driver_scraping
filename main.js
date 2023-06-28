@@ -22,7 +22,7 @@ function log() {
 }
 
 async function getDrivers(page, product) {
-	const screenshot2= 'screenshot2.png'
+	//const screenshot2= 'screenshot2.png'
     const url = `https://www.dell.com/support/home/en-us/product-support/product/${product}/drivers`;
 
     log(`Loading ${url}...`);
