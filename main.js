@@ -115,10 +115,13 @@ async function getDrivers(page, product) {
 }
 
 async function main(options) {
+    if (options.build) {
+        const prompt = "optiplex-7060-desktop";
+        return prompt;
+    } else {
 	const input = promptSync();
-	const prompt = input('What is the Dell Product(Use Reference Sheet For Proper Input):')
-    var browserConfig = {
-    };
+	const prompt = input('What is the Dell Product(Use Reference Sheet For Proper Input):');    
+    var browserConfig = {};
     if (options.debug) {
         browserConfig = {
             ...browserConfig,
@@ -157,6 +160,7 @@ async function main(options) {
     } finally {
         await browser.close();
     }
+    }
 }
 
 program
@@ -164,6 +168,7 @@ program
 	.option('--screenshot-path1 <path>', 'screenshot output path', 'driver_page.png')
     .option('--viewport-size <size>', 'browser viewport size', '1280x720')
     .option('--debug', 'run the browser in foreground', false)
+    .option('--build', 'Reserved for build mode', 'build')
     .parse(process.argv);
 
 await main(program.opts());
